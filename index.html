@@ -67,7 +67,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center" id="neela">
-    
+    <audio id="myAudio" src="nv.ogg"> </audio>
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
@@ -94,8 +94,13 @@
   </footer>
 </div>
 
-<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
   <script src="index.js"></script>
-    
+    <script>
+  window.onload = function() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+</script>
   </body>
 </html>
